@@ -4,7 +4,7 @@ process.stdin.on('readable', function() {
     if (input !== null) {
         var instruction = input.toString().trim();
         var os = process.env.os;
-        
+
         // if(os !=== null){
         // 	process.stdout.write(os);
         // }else{
@@ -18,7 +18,7 @@ process.stdin.on('readable', function() {
         	case "Linux":
        			process.stdout.write("Linux");
 	        	break;
-        	case "Mac":
+        	case "macOS":
 	   			process.stdout.write("Macintosh");
 	        	break;
         	default:
