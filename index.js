@@ -12,7 +12,7 @@ process.stdin.on('readable', function() {
                 process.stdout.write(nodeVer + '\n');
                 break;
             case '/lang':
-                if((osType == "linux") || (osType == "darwin")){
+                if((osType === "linux") || (osType === "darwin")){
                     process.stdout.write(osType + '\n');
                 }else{
                     process.stderr.write('Bad system \n');
